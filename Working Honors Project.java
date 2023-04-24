@@ -14,6 +14,8 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -22,7 +24,7 @@ import javafx.scene.control.TextField;
 
 public class AcademicAdvising extends Application
 {
-	public Button start = new Button("Schedule Now!");
+	public Button start = new Button("Schedule Now");
 	
 	public Button book = new Button("Book Now!");
 	
@@ -44,29 +46,43 @@ public class AcademicAdvising extends Application
 	{
 		//initializing the Pane
 				
-				
+		
 				Label heading=new Label("Arizona State University");
 				Label topic = new Label("Acadmic Advising Office");
+				Label SCAI0 = new Label("School of Computing and Augmented Intelligence");
 		
 				
 				heading.setTextFill(Color.RED);
 				heading.setFont(Font.font(null, 50));
+				heading.setStyle("-fx-font-weight: bold;");
+				
 				
 				topic.setTextFill(Color.RED);
 				topic.setFont(Font.font(null,40));
+				topic.setStyle("-fx-font-weight: bold;");
+//				topic.setStyle("-fx-background-color: black");
+
+				SCAI0.setTextFill(Color.RED);
+				SCAI0.setFont(Font.font(null, 33));
+				SCAI0.setStyle("-fx-font-weight: bold;");
 				
-				start.setFont(Font.font(null,20));
+				start.setFont(Font.font(null,23));
+//				start.setStyle("-fx-font-weight: bold");
 				
-				heading.setTranslateX(150);	
+				heading.setTranslateX(130);	
 				heading.setTranslateY(30);
 				
-				topic.setTranslateX(185);
-				topic.setTranslateY(50);
+				SCAI0.setTranslateX(15);
+				SCAI0.setTranslateY(60);
 				
-				start.setTranslateX(310);
-				start.setTranslateY(120);
+				topic.setTranslateX(185);
+				topic.setTranslateY(90);
+				
+				start.setTranslateX(305);
+				start.setTranslateY(150);
 				
 				introScene.getChildren().add(heading);
+				introScene.getChildren().add(SCAI0);
 				introScene.getChildren().add(topic);
 				introScene.getChildren().add(start);
 				
@@ -88,8 +104,8 @@ public class AcademicAdvising extends Application
 		Label SCAI= new Label("School of Computing and Augmented Intelligence\n	Academic Advising Office Schedule ");
 		//AAS = new Label("Academic Advising Office Schedule");
 		
-		SCAI.setFont(Font.font(null, 35));
-		
+		SCAI.setFont(Font.font(null, 33));
+		SCAI.setStyle("-fx-font-weight: bold;");
 		//AAS.setFont(Font.font(null, 30));
 		
 		
@@ -98,72 +114,95 @@ public class AcademicAdvising extends Application
 		
 		Label TimeDay = new Label("Time/Day");
 		TimeDay.setFont(Font.font(null, 20));
+		TimeDay.setStyle("-fx-font-weight: bold;");
 		
 		Label mon = new Label("  Monday  ");
 		mon.setFont(Font.font(null, 20));
+		mon.setStyle("-fx-font-weight: bold;");
 		
 		Label tues = new Label("  Tuesday  ");
 		tues.setFont(Font.font(null, 20));
+		tues.setStyle("-fx-font-weight: bold;");
 		
 		Label wed = new Label("  Wednesday  ");
 		wed.setFont(Font.font(null, 20));
+		wed.setStyle("-fx-font-weight: bold;");
 		
 		Label thur = new Label("  Thursday  ");
 		thur.setFont(Font.font(null, 20));
+		thur.setStyle("-fx-font-weight: bold;");
 		
 		Label fri = new Label("  Friday  ");
 		fri.setFont(Font.font(null, 20));
+		fri.setStyle("-fx-font-weight: bold;");
 		
 		Label t900 = new Label("9:00");
 		t900.setFont(Font.font(null, 20));
+		t900.setStyle("-fx-font-weight: bold;");
 		
 		Label t930 = new Label("9:30");
 		t930.setFont(Font.font(null, 20));
+		t930.setStyle("-fx-font-weight: bold;");
 		
 		Label t1000 = new Label("10:00");
 		t1000.setFont(Font.font(null, 20));
+		t1000.setStyle("-fx-font-weight: bold;");
 		
 		Label t1030 = new Label("10:30");
 		t1030.setFont(Font.font(null, 20));
+		t1030.setStyle("-fx-font-weight: bold;");
 		
 		Label t1100 = new Label("11:00");
 		t1100.setFont(Font.font(null, 20));
+		t1100.setStyle("-fx-font-weight: bold;");
 		
 		Label t1130 = new Label("11:30");
 		t1130.setFont(Font.font(null, 20));
+		t1130.setStyle("-fx-font-weight: bold;");
 		
 		Label t1200 = new Label("12:00");
 		t1200.setFont(Font.font(null, 20));
+		t1200.setStyle("-fx-font-weight: bold;");
 		
 		Label t1230 = new Label("12:30");
 		t1230.setFont(Font.font(null, 20));
+		t1230.setStyle("-fx-font-weight: bold;");
 		
 		Label t100 = new Label("1:00");
 		t100.setFont(Font.font(null, 20));
+		t100.setStyle("-fx-font-weight: bold;");
 		
 		Label t130 = new Label("1:30");
 		t130.setFont(Font.font(null, 20));
+		t130.setStyle("-fx-font-weight: bold;");
 		
 		Label t200 = new Label("2:00");
 		t200.setFont(Font.font(null, 20));
+		t200.setStyle("-fx-font-weight: bold;");
 		
 		Label t230 = new Label("2:30");
 		t230.setFont(Font.font(null, 20));
+		t230.setStyle("-fx-font-weight: bold;");
 		
 		Label t300 = new Label("3:00");
 		t300.setFont(Font.font(null, 20));
+		t300.setStyle("-fx-font-weight: bold;");
 		
 		Label t330 = new Label("3:30");
 		t330.setFont(Font.font(null, 20));
+		t330.setStyle("-fx-font-weight: bold;");
 		
 		Label t400 = new Label("4:00");
 		t400.setFont(Font.font(null, 20));
+		t400.setStyle("-fx-font-weight: bold;");
 		
 		Label t430 = new Label("4:30");
 		t430.setFont(Font.font(null, 20));
+		t430.setStyle("-fx-font-weight: bold;");
 		
 		
 		Schedule.setGridLinesVisible(true);
+		Schedule.setStyle("-fx-font-weight: bold;");
 		Schedule.setVgap(5);
 //		Schedule.setHgap(10);
 		
@@ -209,7 +248,7 @@ public class AcademicAdvising extends Application
 		BookButton.setOnAction(new ButtonHandler());
 		
 		ScheduleScene.setTop(SCAI);
-		ScheduleScene.setLeft(new Label("  			 "));
+		ScheduleScene.setLeft(new Label("  		 "));
 		ScheduleScene.setCenter(Schedule);
 		
 
@@ -218,7 +257,7 @@ public class AcademicAdvising extends Application
 		VBox top = new VBox();
 		
 		
-		Label SCAI2= new Label(" School of Computing and Augmented Intelligence\n	\t     Academic Advising Office");
+		Label SCAI2= new Label("  School of Computing and Augmented Intelligence\n	\t     Academic Advising Office\n");
 		SCAI2.setFont(Font.font(null, 32));
 		SCAI2.setStyle("-fx-font-weight: bold;");
 		
@@ -229,9 +268,18 @@ public class AcademicAdvising extends Application
 		Label name = new Label("Name : ");
 		Label major = new Label("Major : ");
 		Label asu_email = new Label("ASU Email : ");
-		Label phno = new Label("Phone : ");
+		Label phno = new Label("ASU ID : ");
 		Label reason = new Label("Select the reason(s) for your appointment:");
 		Label question = new Label("Specific questions or other comments?");
+		
+		name.setFont(Font.font(null, 23));
+		major.setFont(Font.font(null, 23));
+		asu_email.setFont(Font.font(null, 23));
+		phno.setFont(Font.font(null, 23));
+		reason.setFont(Font.font(null, 23));
+		question.setFont(Font.font(null, 23));
+		
+		book.setStyle("-fx-font-weight: bold;");
 		
 		TextField ename = new TextField();
 		TextField emajor = new TextField();
@@ -300,9 +348,12 @@ public class AcademicAdvising extends Application
 		Label thanks = new Label("Your appointment has been confirmed! One of the advisors \n\t\tfrom our office will contact you soon. \n\t\t\tThank you for choosing SCAI!");
 		thanks.setFont(Font.font(null, 25));
 		thanks.setStyle("-fx-font-weight: bold;");
+		thanks.setTextFill(Color.RED);
+		
 		
 		Label SCAI3 = new Label(" School of Computing and Augmented Intelligence\n  	\t     Academic Advising Office");
 		SCAI3.setFont(Font.font(null, 32));
+		SCAI3.setTextFill(Color.RED);
 		SCAI3.setStyle("-fx-font-weight: bold;");
 		
 		SCAI3.setTranslateX(10);	
@@ -318,9 +369,10 @@ public class AcademicAdvising extends Application
 		lastScene.getChildren().add(thanks);
 		
 
-		//stage parts
+		//stage part
 
 		Scene scene = new Scene(root, 800, 700);
+		root.setStyle("-fx-background-color: gold;");
 		stage.setTitle("ASU Academic Advising System");
 		stage.setScene(scene);
 		stage.show();
@@ -328,11 +380,12 @@ public class AcademicAdvising extends Application
 		
 		
 	}
-	
+
 	public Button createButton() {
 		Button buttonBook = new Button("Book");
 		buttonBook.setOnAction(new ButtonHandler());
 		ButtonList.add(buttonBook);
+		buttonBook.setStyle("-fx-font-weight: bold;");
 		return buttonBook;	
 	}
 	
